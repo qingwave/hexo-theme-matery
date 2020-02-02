@@ -1,0 +1,78 @@
+<style type="text/css">
+    /* don't remove. */
+    .about-cover {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .row-top {
+        position: relative;
+        top: 10vh;
+        bottom: 10vh;
+    }
+
+    .poem-title {
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+    }
+
+    .poem-subtitle {
+        margin-bottom: 15px;
+        opacity: .7;
+        font-style: italic;
+        margin-left: 50%;
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+
+    .poem-content {
+        text-align: center;
+    }
+
+    .poem-author {
+        margin-bottom: 10px;
+        opacity: .7;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+</style>
+
+<div class="bg-cover pd-header about-cover">
+    <div class="container row-top">
+        <div class="poem-title">
+            「 <%= page.title %> 」
+        </div>
+        <div class="poem-author ">
+            <% if (page.author) { %>
+             <%= page.author %> | <%-date(page.date, 'YYYY-MM-DD') %>
+            <% } %>
+        </div>
+        <% if (page.subtitle && page.subtitle.length) { %>
+        <div class="poem-subtitle">
+            ——<%= page.subtitle %>
+        </div>
+        <% } %>
+        
+        <div id="articleContent" class="poem-content">
+            <%- page.content %>
+    </div>
+</div>
+</div>
+
+
+
+<% if (theme.banner.enable) { %>
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+</script>
+<% } else { %>
+<script>
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
+</script>
+<% } %>

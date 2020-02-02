@@ -22,6 +22,14 @@
     </a>
 <% } %>
 
+<% if (theme.socialLink.wechat) { %>
+    <a href="/wechat.jpg"
+       target="_blank" data-tooltip="添加我的微信: <%= theme.socialLink.wechat %>" data-position="top"
+       data-delay="50">
+        <i class="fa fa-weixin"></i>
+    </a>
+<% } %>
+
 <% if (theme.socialLink.qq) { %>
     <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=<%= theme.socialLink.qq %>" class="tooltipped" target="_blank" data-tooltip="QQ联系我: <%= theme.socialLink.qq %>" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
@@ -37,6 +45,22 @@
 <% if (theme.socialLink.zhihu) { %>
     <a href="<%= theme.socialLink.zhihu %>" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: <%= theme.socialLink.zhihu %>" data-position="top" data-delay="50">
         <i class="fab fa-zhihu1">知</i>
+    </a>
+<% } %>
+
+<% if (theme.socialLink.jianshu) { %>
+    <a href="https://www.jianshu.com/u/<%= theme.socialLink.jianshu %>"
+       target="_blank" data-tooltip="关注我的简书: <%= theme.socialLink.jianshu %>" data-position="top"
+       data-delay="50">
+        <i class="fa fa-inverse">简</i>
+    </a>
+<% } %>
+
+<% if (theme.socialLink.douban) { %>
+    <a href="https://www.douban.com/people/<%= theme.socialLink.douban %>"
+       target="_blank" data-tooltip="关注我的豆瓣: <%= theme.socialLink.douban %>" data-position="top"
+       data-delay="50">
+        <i class="fa fa-inverse">豆</i>
     </a>
 <% } %>
 
