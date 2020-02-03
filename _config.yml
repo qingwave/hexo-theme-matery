@@ -451,7 +451,7 @@ daovoice:
 
 # Tidio online contact
 tidio:
-  enable: make
+  enable: true
   public_key: skkavpodxzmxaqr5pxcyvtqgxbrxntra
 
 #背景canvas-nest
