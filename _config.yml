@@ -270,13 +270,13 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: true
-  owner: qingwave
-  repo: qingwave.github.io
+  enable: false
+  owner: 
+  repo: 
   oauth:
-    clientId: a705189dfc18ec59a7d0
-    clientSecret: 17415910b55e24cdb8c1c8d72bc992a0457f193b
-  admin: qingwave
+    clientId: 
+    clientSecret: 
+  admin: 
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
@@ -451,8 +451,8 @@ daovoice:
 
 # Tidio online contact
 tidio:
-  enable: true
-  public_key: skkavpodxzmxaqr5pxcyvtqgxbrxntra
+  enable: false
+  public_key: 
 
 #背景canvas-nest
 canvas_nest:

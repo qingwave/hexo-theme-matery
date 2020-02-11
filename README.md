@@ -1,8 +1,6 @@
 # hexo-theme-matery
 
-[![HitCount](http://hits.dwyl.io/blinkfox/hexo-theme-matery.svg)](http://hits.dwyl.io/blinkfox/hexo-theme-matery) [![Gitter](https://img.shields.io/gitter/room/blinkfox/hexo-theme-matery.svg)](https://gitter.im/hexo-theme-matery/Lobby?utm_source=badge) [![GitHub issues](https://img.shields.io/github/issues/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/issues) [![GitHub license](https://img.shields.io/github/license/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/blob/master/LICENSE) [![Download](https://img.shields.io/badge/downloads-master-green.svg)](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) [![Hexo Version](https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg)](http://hexo.io) [![GitHub forks](https://img.shields.io/github/forks/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/network) [![GitHub stars](https://img.shields.io/github/stars/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/stargazers)
-
-[🇨🇳中文说明](README_CN.md) | [DEMO](https://blinkfox.github.io/)
+[🇨🇳中文说明](README_CN.md) | [DEMO](https://qingwave.github.io/)
 
 > This is a Hexo blog theme with 'Material Design' and responsive design.
 
@@ -28,23 +26,14 @@
 - Support the `emoji` emoticon and use the `markdown emoji` grammar to directly generate the corresponding emoticon.
 - Support [DaoVoice](http://www.daovoice.io/)、[Tidio](https://www.tidio.com/) online chat.
 
-## Contributor
-
-Thanks to these contributors, without whom, hexo-theme-matery won't be this perfect.
-
-- [@HarborZeng](https://github.com/HarborZeng)
-- [@shw2018](https://github.com/shw2018)
-- [@L1cardo](https://github.com/L1cardo)
-- [@Five-great](https://github.com/Five-great)
-
 ## Download
 
 You should have a [Hexo](https://hexo.io/zh-cn/) blog when you see it here.If not,try to use the hexo and [Markdown](https://www.appinn.com/markdown/) to write your blog and post.
-Click [here](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) to download master branch of the last stable version of the code.After decompressing,copy the `hexo-theme-matery` folder
+Click [here](https://codeload.github.com/qingwave/hexo-theme-matery/zip/qinng) to download master branch of the last stable version of the code.After decompressing,copy the `hexo-theme-matery` folder
 to your `themes` folder of your Hexo.Of course,you can uer `Git clone` to download in your `themes` folder.
 
 ```bash
-git clone https://github.com/blinkfox/hexo-theme-matery.git
+git clone https://github.com/qingwave/hexo-theme-matery.git
 ```
 
 ## Configuration
