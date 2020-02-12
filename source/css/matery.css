@@ -1,15 +1,15 @@
 /*全局基础样式*/
 /*小屏幕下(手机类)的样式*/
-@media only screen and (max-width: 601px) {
+@media only screen and (max-width: 600px) {
     .container {
-        width: 95%;
+        width: 98%;
     }
 }
 
 /*中等屏幕下(平板类)的样式*/
-@media only screen and (min-width: 600px) and (max-width: 992px) {
+@media only screen and (min-width: 601px) and (max-width: 992px) {
     .container {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -17,7 +17,7 @@
 @media only screen and (min-width: 993px) {
     .container {
         width: 90%;
-        max-width: 1125px;
+        max-width: 1250px;
     }
 
     .head-container {
@@ -124,7 +124,7 @@ pre {
     content: " ";
     position: absolute;
     border-radius: 50%;
-    background: #ff5f56;
+    background: #fff;
     width: 12px;
     height: 12px;
     top: 0;
@@ -250,7 +250,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #1f4d71 100%, #71bbb6 100%);
+    background: #1f4d71;
     opacity: 0.8;
     /* 透明度*/
 }
@@ -294,6 +294,23 @@ header .nav-transparent {
     background-color: transparent !important;
     background-image: none;
     box-shadow: none;
+}
+
+.bg-white {
+    background: rgb(22, 141, 92) !important;
+    opacity: 1;
+    color: #000 !important;
+}
+
+header .fixed {
+    background-color: #fff;
+    background-image: none;
+    color: #000 !important;
+    box-shadow: none;
+}
+
+header .visible {
+    margin-top: -64px;
 }
 
 header nav .brand-span {
@@ -561,7 +578,7 @@ header .go-back i {
 
 .bg-cover:after {
     background-color: #000;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .bg-cover:before,
@@ -922,7 +939,8 @@ article .article-tags .chip {
 }
 
 .paging i {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    color: #1f4d71;
 }
 
 .paging .disabled {
@@ -931,6 +949,11 @@ article .article-tags .chip {
 
 .paging .disabled i {
     color: #999 !important;
+}
+
+.bnt-bg {
+    background-color: #fff!important;;
+    opacity: 0.8;
 }
 
 /*文章详情样式*/
@@ -1472,7 +1495,7 @@ thead {
         top: 24px;
         left: auto;
         right: 100%;
-        border-color: #ffa726;
+        border-color: lightb;
     }
 
     .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
@@ -1747,19 +1770,22 @@ thead {
 /*尾部样式*/
 footer {
     padding-bottom: 1px;
+    background: #eaeaea !important;
+    color: #1f4d71 !important;
 }
 
 footer .social-statis {
     margin-top: 10px;
     position: relative;
+    color: #1f4d71
 }
 
 footer a {
-    color: #fff;
+    color: #1f4d71;
 }
 
 footer .copy-right {
-    color: #dbdbdb;
+    color: #1f4d71;
 }
 
 /*搜索层样式*/
@@ -1819,15 +1845,13 @@ footer .copy-right {
 }
 
 .top-scroll .btn-floating {
-    background: #1f4d71;
+    background: #fff;
     opacity: 0.8;
-    width: 48px;
-    height: 48px;
 }
 
 .top-scroll .btn-floating i {
-    line-height: 48px;
-    font-size: 1.8rem;
+    color: #1f4d71;
+    font-size: 1rem;
 }
 
 @media screen and (min-width: 368px) and (max-width: 767px) {
@@ -1941,6 +1965,7 @@ footer .copy-right {
 /*二级菜单*/
 
 .nav-menu {
+    color: #000;
 }
 
 .nav-menu li .sub-nav {

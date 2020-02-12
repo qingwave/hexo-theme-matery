@@ -10,7 +10,7 @@ $(function () {
             $(this).removeClass(animateClass);
         });
     };
-    articleCardHover();
+    // articleCardHover();
 
     /*菜单切换*/
     $('.sidenav').sidenav();
@@ -127,6 +127,7 @@ $(function () {
     /*监听滚动条位置*/
     let $nav = $('#headNav');
     let $backTop = $('.top-scroll');
+    var initTop = 0
     // 当页面处于文章中部的时候刷新页面，因为此时无滚动，所以需要判断位置,给导航加上绿色。
     showOrHideNavBg($(window).scrollTop());
     $(window).scroll(function () {
@@ -142,10 +143,20 @@ $(function () {
             $backTop.slideUp(300);
         } else {
             $nav.removeClass('nav-transparent');
+            if (scrollDirection(position)) {
+                $nav.addClass('visible');
+            } else {
+                $nav.removeClass('visible');
+            }
             $backTop.slideDown(300);
         }
     }
 
+    function scrollDirection (position) {
+        var result = position > initTop // true is down & false is up
+        initTop = position
+        return result
+    }
     	
 	$(".nav-menu>li").hover(function(){
 		$(this).children('ul').stop(true,true).show();

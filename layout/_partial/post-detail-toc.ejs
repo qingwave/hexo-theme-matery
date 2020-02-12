@@ -82,13 +82,18 @@
     }
 
     #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
+        background: #fff !important;
+        opacity: 0.8;
     }
 
     #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
+        color: #1f4d71;
+        font-size: 1rem;
+    }
+
+    #floating-toc-btn .after {
+        color: #000;
+        font-size: 1rem;
     }
 </style>
 <div class="row">
@@ -106,7 +111,7 @@
 <!-- TOC 悬浮按钮. -->
 <% if (theme.toc.enable && theme.toc.showToggleBtn) { %>
 <div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
+    <a class="btn-floating btn-mini waves-effect bnt-color">
         <i class="fas fa-list-ul"></i>
     </a>
 </div>
