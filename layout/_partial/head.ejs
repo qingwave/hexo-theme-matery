@@ -66,7 +66,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="<%= keyWords %>">
-    <meta name="description" content="<%= description %>">
+    <meta name="description" content="<%= config.description %>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -74,6 +74,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <%- partial('_partial/google-analytics') %>
     <title><%= pageTitle %></title>
     <link rel="icon" type="<%= iconType %>" href="<%- theme.jsDelivr.url %><%- theme.favicon %>">
 
@@ -84,7 +85,7 @@
     <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- theme.libs.css.lightgallery %>">
     <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %>/css/matery.css">
     <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %>/css/my.css">
-    
+
     <script src="<%- theme.jsDelivr.url %><%- theme.libs.js.jquery %>"></script>
     
 </head>
