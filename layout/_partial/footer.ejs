@@ -6,7 +6,13 @@
         <div class="center-align">
             Copyright&nbsp;&copy;
             <span id="year"><%- theme.time.year %></span>
+<<<<<<< HEAD
             <a href="<%- config.url %>" target="_blank"><%- config.author %></a>
+=======
+            <a href="<%- url_for('/about') %>" target="_blank"><%- config.author %></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+>>>>>>> origin/develop
             <br>
             <% if (theme.postInfo.totalCount) { %>
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;&nbsp;<span
@@ -76,9 +82,15 @@
             <% } %>
             <br>
             <% if (theme.icp.enable) { %>
+<<<<<<< HEAD
                 <span id="icp"><img src="<%- theme.jsDelivr.url %>/medias/icp.png" style="vertical-align: text-bottom;" />
                     <a href="<%- theme.icp.url %>" target="_blank"><%- theme.icp.text %></a>
                 </span>
+=======
+            <span id="icp"><img src="<%- theme.jsDelivr.url %><%- url_for('/medias/icp.png') %>" style="vertical-align: text-bottom;" />
+                <a href="<%- url_for(theme.icp.url) %>" target="_blank"><%= theme.icp.text %></a>
+            </span>
+>>>>>>> origin/develop
             <% } %>
         </div>
         <!-- <div class="col s12 m4 l4 social-link <%- socialClass %>"><%- partial('_partial/social-link') %></div> -->
